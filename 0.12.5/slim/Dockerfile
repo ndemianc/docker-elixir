@@ -21,3 +21,5 @@ RUN set -xe \
     && rm elixir-precompiled.zip \
     && apt-get purge -y --auto-remove $buildDeps \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+CMD ["iex"]
